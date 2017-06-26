@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-body, h1, h2, h3, h4, h5, h6, a, p, span, label, div, b, i, strong, ul, li {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+label,
+div,
+b,
+i,
+strong,
+ul,
+li {
   font-family: 'Open Sans', sans-serif !important; }
 
 body {
@@ -15,21 +31,11 @@ body {
   background-color: #444444;
   background-attachment: fixed; }
 
-footer {
-  background-color: #000;
-  padding: 10px 0; }
-  footer .copyright {
-    text-align: center; }
-    footer .copyright p {
-      margin-bottom: 0;
-      color: #fff;
-      font-size: .8em; }
-
 .row {
   max-width: 100%; }
 
 .title {
-  padding: 30px 0;
+  padding: 20px 0;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -37,24 +43,20 @@ footer {
   background-color: #000000;
   z-index: 10;
   background-attachment: fixed;
-  border-bottom: 8px solid #000000; }
+  border-bottom: 5px solid #000000;
+  box-shadow: 1px 0 30px 10px #000;
+  -webkit-box-shadow: 1px 0 30px 10px #000;
+  -moz-box-shadow: 1px 0 30px 10px #000;
+  min-height: 100px; }
   .title h1 {
     color: #fff;
-    margin: 0; }
-  .title:before {
-    content: '';
-    position: absolute;
-    height: 50px;
-    width: 100%;
-    background: -moz-linear-gradient(top, black 0%, transparent 100%);
-    background: -webkit-linear-gradient(top, black 0%, transparent 100%);
-    background: -moz-linear-gradient(top, black 0%, transparent 100%);
-    left: 0;
-    right: 0;
-    bottom: -50px; }
+    margin: 0;
+    font-size: 40px; }
+    .title h1 span {
+      color: yellow; }
 
 .team {
-  padding: 150px 0 0 0;
+  padding: 160px 0 0 0;
   background-color: #444444;
   background-image: url("../img/debut-light.png");
   position: relative;
@@ -65,7 +67,9 @@ footer {
     background-color: #fff;
     border-radius: 4px;
     overflow: hidden;
-    border: 5px solid #fff; }
+    border: 5px solid #fff;
+    cursor: pointer;
+    transition: all ease .5s; }
     .team .item-video:before {
       content: '';
       background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.65) 100%);
@@ -78,13 +82,16 @@ footer {
       left: 0;
       right: 0;
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+    .team .item-video:focus, .team .item-video:active, .team .item-video:hover {
+      border: 5px solid yellow; }
     .team .item-video .infos {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       width: 100%;
-      padding: 10px; }
+      padding: 10px;
+      display: block; }
       .team .item-video .infos .name {
         color: #fff;
         font-size: 18px;
@@ -94,6 +101,19 @@ footer {
         font-size: 13px;
         color: #fff;
         margin-bottom: 0; }
+    .team .item-video img {
+      transition: all ease .5s; }
+    .team .item-video:hover {
+      transition: all ease .5s; }
+      .team .item-video:hover img {
+        transition: all ease .5s;
+        transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+        -webkit-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+        -moz-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+        -o-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+        -ms-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px); }
+      .team .item-video:hover .infos {
+        display: none; }
 
 .modal-video {
   padding: 0;
@@ -106,7 +126,25 @@ footer {
     width: 100%;
     display: block;
     max-height: 400px; }
+  .modal-video iframe {
+    width: 320px;
+    height: 600px; }
 
-iframe {
-  width: 320px;
-  height: 600px; }
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
