@@ -1,0 +1,27 @@
+- name: Stenio Galvão
+  as: Desenvolvedor Back End
+  at: Infoway
+  i: 1
+  img: stenio.jpg
+  video: 223066900
+
+- name: Silio Silvestre
+  as: Desenvolvedor Mobile
+  at: Infoway
+  i: 2
+  img: silio.jpg
+  video: 223066582
+
+- name: Francisco Júnior
+  as: Gerente • Infoway
+  at: Infoway
+  i: 3
+  img: jr.jpg
+  video: 223066364
+
+- name: Fernando França
+  as: Professor • IFPI
+  at: IFPI
+  i: 4
+  img: fernando.jpg
+  video: 223066959

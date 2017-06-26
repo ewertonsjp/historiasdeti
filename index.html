@@ -8,26 +8,25 @@ layout: default
 
 <section id="photos" class="team">
     <div class="row small-up-2 medium-up-4 large-up-6">
-        
-        <div class="column column-block">
-            <div class="item-video" data-toggle="modalVideo-1">
-                <img src="https://scontent-mia1-2.xx.fbcdn.net/v/t1.0-9/15894779_1466736383344817_7550851087216028766_n.jpg?oh=e7fd46b29bdcef6392033f53fcc94c53&oe=59E223C8" alt="">
-                
-                <div class="infos">
-                    <h2 class="name">Stenio Galvao</h2>
-                    <p class="area">Desenvolvedor Back End</p>
-                </div>
+        {% for dev in site.data.devs %}
+          <div class="column column-block">
+              <div class="item-video" data-toggle="modalVideo-{{dev.i}}">
+                  <img src="img/imgs/{{dev.img}}" alt="">
 
-                <div class="modal-video reveal" id="modalVideo-1" data-reveal data-animation-in="spin-in" data-animation-out="spin-out">
-                    <video id="video" class="videoplayer" controls autoplay>
-                        <source src="img/videos/video.mp4" type="video/mp4">
-                    </video>
-                  
-                    <button class="close-button" data-close aria-label="Close reveal" type="button">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        </div>
+                  <div class="infos">
+                      <h2 class="name">{{dev.name}}</h2>
+                      <p class="area">{{dev.as}}</p>
+                  </div>
+
+                  <div class="modal-video reveal" id="modalVideo-{{dev.i}}" data-reveal data-animation-in="spin-in" data-animation-out="spin-out">
+                      <iframe src="https://player.vimeo.com/video/{{dev.video}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+                      <button class="close-button" data-close aria-label="Close reveal" type="button">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+        {% endfor %}
     </div>
 </section>

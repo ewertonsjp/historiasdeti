@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p,
-span,
-label,
-div,
-b,
-i,
-strong,
-ul,
-li {
+body, h1, h2, h3, h4, h5, h6, a, p, span, label, div, b, i, strong, ul, li {
   font-family: 'Open Sans', sans-serif !important; }
 
 body {
@@ -122,3 +106,7 @@ footer {
     width: 100%;
     display: block;
     max-height: 400px; }
+
+iframe {
+  width: 320px;
+  height: 600px; }
