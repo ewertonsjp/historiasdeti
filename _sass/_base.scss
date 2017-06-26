@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
-body, h1, h2, h3, h4, h5, h6, a, p, span, label, div, b, i, strong, ul, li {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+label,
+div,
+b,
+i,
+strong,
+ul,
+li {
     font-family: 'Open Sans', sans-serif !important;
 }
 
@@ -14,29 +29,28 @@ body {
     font-feature-settings: "kern" 1;
     font-kerning: normal;
     background-image: url("../img/debut-light.png");
-    background-color: #444444;;
+    background-color: #444444;
     background-attachment: fixed;
 }
 
-footer {
-    background-color: #000;
-    padding: 10px 0;
-    .copyright {
-        text-align: center;
-        p {
-            margin-bottom: 0;
-            color: #fff;
-            font-size: .8em;
-        }
-    }
-}
-
-.row{
+// footer {
+//     background-color: #000;
+//     padding: 10px 0;
+//     .copyright {
+//         text-align: center;
+//         p {
+//             margin-bottom: 0;
+//             color: #fff;
+//             font-size: .8em;
+//         }
+//     }
+// }
+.row {
     max-width: 100%;
 }
 
-.title{
-    padding: 30px 0;
+.title {
+    padding: 20px 0;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -44,98 +58,135 @@ footer {
     background-color: #000000;
     z-index: 10;
     background-attachment: fixed;
-    border-bottom: 8px solid #000000;
+    border-bottom: 5px solid #000000;
+    box-shadow: 1px 0 30px 10px #000;
+    -webkit-box-shadow: 1px 0 30px 10px #000;
+    -moz-box-shadow: 1px 0 30px 10px #000;
+    min-height: 100px;
     h1 {
         color: #fff;
         margin: 0;
-    }
-
-    &:before {
-        content: '';
-        position: absolute;
-        height: 50px;
-        width: 100%;
-        background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-        background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%);
-        left: 0;
-        right: 0;
-        bottom: -50px;
+        font-size: 40px;
+        span {
+            color: yellow;
+        }
     }
 }
 
-.team{
-    padding: 150px 0 0 0;
+.team {
+    padding: 160px 0 0 0;
     background-color: #444444;
     background-image: url("../img/debut-light.png");
     position: relative;
     background-attachment: fixed;
-
-    .item-video{
+    .item-video {
         position: relative;
         position: relative;
         background-color: #fff;
         border-radius: 4px;
         overflow: hidden;
         border: 5px solid #fff;
-
-        &:before{
+        cursor: pointer;
+        transition: all ease .5s;
+        &:before {
             content: '';
-
-            background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
-            background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
             background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
             position: absolute;
             width: 100%;
             bottom: 0;
             top: 0;
             left: 0;
-            right: 0; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
+            right: 0;
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         }
-
-        .infos{
+        &:focus,
+        &:active,
+        &:hover {
+            border: 5px solid yellow;
+        }
+        .infos {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
             width: 100%;
             padding: 10px;
-
-            .name{
+            display: block;
+            .name {
                 color: #fff;
                 font-size: 18px;
                 font-weight: bold;
                 margin-bottom: 0;
             }
-
-            .area{
+            .area {
                 font-size: 13px;
                 color: #fff;
                 margin-bottom: 0;
             }
-
         }
-
+        img {
+            transition: all ease .5s;
+        }
+        &:hover {
+            transition: all ease .5s;
+            img {
+                transition: all ease .5s;
+                transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+                -webkit-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+                -moz-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+                -o-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+                -ms-transform: rotate(0deg) scale(1.1) skew(0deg) translate(0px);
+            }
+            .infos {
+                display: none;
+            }
+        }
     }
 }
 
-.modal-video{
+.modal-video {
     padding: 0;
     text-align: center;
     min-width: 320px;
     width: auto !important;
     max-width: 400px;
     background-color: #000000;
-
-    .videoplayer{
+    .videoplayer {
         width: 100%;
         display: block;
         max-height: 400px;
     }
+    iframe {
+        width: 320px;
+        height: 600px;
+    }
 }
 
-iframe {
-  width: 320px;
-  height: 600px;
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

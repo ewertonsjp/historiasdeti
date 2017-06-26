@@ -3,14 +3,14 @@ layout: default
 ---
 
 <section class="title">
-    <h1>Na dúvida? Conheça essas histórias! <em>Seja #IFPI. Faça #INFO</em></h1>
+    <h1>Na dúvida? Conheça essas histórias! <i>Seja <span>#IFPI</span>. Faça <span>#INFO</span></i></h1>
 </section>
 
 <section id="photos" class="team">
-    <div class="row small-up-2 medium-up-4 large-up-6">
+    <div class="row small-up-2 medium-up-5 large-up-5">
         {% for dev in site.data.devs %}
           <div class="column column-block">
-              <div class="item-video" data-toggle="modalVideo-{{dev.i}}">
+              <div class="item-video fadeIn" data-toggle="modalVideo-{{dev.i}}">
                   <img src="img/imgs/{{dev.img}}" alt="">
 
                   <div class="infos">
