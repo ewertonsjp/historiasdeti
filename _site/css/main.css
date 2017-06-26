@@ -103,11 +103,11 @@ footer {
       padding: 10px; }
       .team .item-video .infos .name {
         color: #fff;
-        font-size: 15px;
+        font-size: 18px;
         font-weight: bold;
         margin-bottom: 0; }
       .team .item-video .infos .area {
-        font-size: 12px;
+        font-size: 13px;
         color: #fff;
         margin-bottom: 0; }
 
@@ -116,9 +116,9 @@ footer {
   text-align: center;
   min-width: 320px;
   width: auto !important;
-  max-width: 600px;
+  max-width: 400px;
   background-color: #000000; }
   .modal-video .videoplayer {
     width: 100%;
     display: block;
-    max-height: 650px; }
+    max-height: 400px; }
