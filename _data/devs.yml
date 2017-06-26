@@ -6,7 +6,7 @@
   video: 223066900
 
 - name: Silio Silvestre
-  as: Desenvolvedor Mobile
+  as: Desenvolvedor Android
   at: Infoway
   i: 2
   img: silio.jpg
@@ -25,3 +25,52 @@
   i: 4
   img: fernando.jpg
   video: 223066959
+
+- name: Douglas Taguary
+  as: Desenvolvedor IOS
+  at: Infoway
+  i: 5
+  img: douglas.jpg
+  video: 223139614
+
+- name: Djair Carvalho
+  as: Desenvolvedor Back End
+  at: Infoway
+  i: 6
+  img: djair.jpg
+  video: 223093422
+
+- name: Joval Júnior
+  as: Analista de Sistemas
+  at: Medplan
+  i: 7
+  img: joval.jpg
+  video: 223127694
+
+- name: Gleydson Rocha
+  as: Desenvolvedor Back End
+  at: Infoway
+  i: 8
+  img: gleydson.jpg
+  video: 223093477
+
+- name: Anderson Farias
+  as: Desenvolvedor Back End
+  at: Amazon
+  i: 9
+  img: ninho.jpg
+  video: 223191396
+
+- name: Matheus Campanhã
+  as: Analista de TI
+  at: UFPI
+  i: 10
+  img: matheus_2.jpg
+  video: 223087486
+
+- name: Marcelo Miranda
+  as: Analista de Sistemas
+  at: Medplan
+  i: 11
+  img: diablo.jpg
+  video: 223191483
