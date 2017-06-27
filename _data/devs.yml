@@ -26,8 +26,8 @@
   img: fernando.jpg
   video: 223066959
 
-- name: Douglas Taguary
-  as: Desenvolvedor IOS
+- name: Douglas Taquary
+  as: Desenvolvedor iOS
   at: Infoway
   i: 5
   img: douglas.jpg
@@ -81,3 +81,31 @@
   i: 12
   img: rolim.jpg
   video: 223201410
+
+- name: Karolliny Lima
+  as: ATN
+  at: Infoway
+  i: 13
+  img: karol.jpg
+  video: 223226318
+
+- name: Olivan Aires
+  as: Desenvolvedor Back End
+  at: Canadá
+  i: 14
+  img: olivan.jpg
+  video: 223269686
+
+- name: Pedro Almir
+  as: Professor • IFMA
+  at: IFMA
+  i: 15
+  img: pedroalmir.jpg
+  video: 223281490
+
+- name: Fábio Abrantes
+  as: Professor • IFPI
+  at: IFPI
+  i: 16
+  img: bala.jpg
+  video: 223219000
