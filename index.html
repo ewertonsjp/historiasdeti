@@ -8,7 +8,8 @@ layout: default
 
 <section id="photos" class="team">
     <div class="row small-up-2 medium-up-5 large-up-5">
-        {% for dev in site.data.devs %}
+        {% assign _devs = site.data.devs | shuffle %}
+        {% for dev in _devs %}
           <div class="column column-block">
               <div class="item-video fadeIn" data-toggle="modalVideo-{{dev.i}}">
                   <img src="img/imgs/{{dev.img}}" alt="">
