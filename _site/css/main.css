@@ -55,8 +55,13 @@ body {
     .title h1 span {
       color: yellow; }
 
+@media (max-width: 767px) {
+  .team {
+    padding: 260px 0 0 0; } }
+@media (min-width: 768px) {
+  .team {
+    padding: 160px 0 0 0; } }
 .team {
-  padding: 160px 0 0 0;
   background-color: #444444;
   background-image: url("../img/debut-light.png");
   position: relative;
